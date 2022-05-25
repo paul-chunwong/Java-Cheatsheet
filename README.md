@@ -47,7 +47,7 @@ Date Type:
 
 Primitive types:
 int, double, String, char, boolean, short, float(e.g. 3.1423f), long(e.g. 321975345897L)
-# 如果一个data type的第一个字母是大写 那这个data type就是reference: e.g. String
+如果一个data type的第一个字母是大写 那这个data type就是reference: e.g. String
 
 Integer.parseInt("abc");     -> parse String to int
 Double.parseDouble("abc");   -> parse String to Double
@@ -68,8 +68,8 @@ User Input:
 3) char c1 = scanner.next();
 4) scanner.close();
 
-# After using nextInt & etc. we should use scanner.nextLine(); to clear the scanner,
-# otherwise error will occur when using nextLine() later.
+After using nextInt & etc. we should use scanner.nextLine(); to clear the scanner,
+otherwise error will occur when using nextLine() later.
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -117,10 +117,10 @@ Dog d;
 d = new Dog();    (Dog d = new Dog();)
 Dog fido = d;
 
-# fido is not copy of d, they are now pointing to the same Dog object,
-# Any change happened in fido or d will now change the other (because they are the same Dog object now).
-# Passing an object into the method as parameter will not copy a new object; instead, it points to the same object.
-# When passing objects into different connect methods, carefully consider their scope.
+fido is not copy of d, they are now pointing to the same Dog object,
+Any change happened in fido or d will now change the other (because they are the same Dog object now).
+Passing an object into the method as parameter will not copy a new object; instead, it points to the same object.
+When passing objects into different connect methods, carefully consider their scope.
 
 
 object1.equals(object2)      -> return true if two objects are same, false otherwise
